@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="product_text_type">Loại:</string>
+    <string name="product_text_money">$:</string>
+    <string name="product_text_nvd">%d VND</string>
+</resources>

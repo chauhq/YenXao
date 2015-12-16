@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+    <com.project.chauhq.yenxao.widget.CircleImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_test" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/imgAvatar"
+        android:textColor="@color/colorAccent"
+        android:text="User Name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/imgAvatar"
+        android:layout_below="@+id/tvUserName"
+        android:text="User Name sds sds sds sds sdsd sds sds sds sds sd sd sds ds d sd s sd s d sd s ds d s ds ds d sd s ds s ds s dsd s " />
+
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.project.chauhq.yenxao.parallax.ParallaxScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#30b2b2b2"
+        android:padding="15dp"
+        android:scrollbars="none"
+        app:parallax_factor="1.9"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/ing_avatar"
+                    android:contentDescription="@string/description"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hoang Quang Chau" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="abc syz .... " />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp" />
+
+                    <ImageView
+                        android:id="@+id/imgNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/description"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_next" />
+
+                    <ImageView
+                        android:id="@+id/imgPrevious"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/description"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_previous"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:layout_marginTop="1dp">
+
+                    <ImageView
+                        android:id="@+id/imgSecondPhoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/img_logo_yen_xao"
+                        android:contentDescription="@string/description" />
+
+                    <ImageView
+                        android:id="@+id/tvMore"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/imgSecondPhoto"
+                        android:layout_toRightOf="@+id/imgSecondPhoto"
+                        android:layout_weight="2"
+                        android:contentDescription="@string/description"
+                        android:background="@drawable/img_product"
+                        android:scaleType="centerCrop"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+            <com.project.chauhq.yenxao.widget.SpiderWebChart
+                android:id="@+id/spiderWebChart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:isIndicator="true"
+
+                android:numStars="5"
+                android:progressDrawable="@drawable/bg_common_rate"
+                android:rating="5"
+                android:stepSize="1.0" />
+
+            <TextView
+                android:id="@+id/edtComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_common_comment"
+                android:hint="comment"
+                android:padding="10dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+    </com.project.chauhq.yenxao.parallax.ParallaxScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/anchorBottom"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_shop" />
+
+    <View
+        android:id="@+id/anchorBottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible" />
+</RelativeLayout>

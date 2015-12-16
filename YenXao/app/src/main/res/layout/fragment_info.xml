@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.project.chauhq.yenxao.parallax.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#30b2b2b2"
+    android:scrollbars="none"
+    app:parallax_factor="1.9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_top_info"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:visibility="visible"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="1. Ăn yến sào có lợi ích gì ?"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trong tổ Yến sào chứa 31 nguyên tố vi lượng dinh dưỡng cần thiết cho sự phát triển của cơ thể. đặt biệt là trẻ em và người có tuổi, Yến sào giàu canxi và sắt, có các chất lợi cho não bộ thân kinh như mangan, brôm, đồng, kẽm.ngoài ra còn kích thích tiêu hóa như crôm, nguyên tố chống lão hóa, chống tia phóng xạ như se-len. Yến sào chứa đường galactose mà không có chất béo. Phụ nữ muốn có làn da đẹp, giữ mãi nét  trẻ trung, năng động, nên tổ yến có chứa threonine là 1 trong các chất hình thành elastine và collagene của da, giúp da không bị lão hóa..."/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="2. Lưu ý khi mua yến sào nguyên chất."/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thứ 1: Là chất lượng yến sào, nếu là yến sào thật thì hàm lượng dinh dưỡng ở mỗi vùng mỗi miền khác nhau sẽ cho ra tổ yến có màu , và mùi cũng như hàm lượng dinh dưỡng khác nhau nhưng cũng không hơn kém nhau mấy. Điều quan trọng là phải dùng đúng yến thật."/>
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thứ 2: là giá cả thị trường ,theo được biết yến sào trên thị trường hiện nay rất đa dạng, ví dụ : yến sào khánh hòa, yến sào hội an, yến sào cần giờ ,mà giá cả chênh lệch nhau rất nhiều. Như đã nói ở điều thứ 1, yến sào nào cũng là yến , về hàm lượng dinh dưỡng cũng như nhau ,vì vậy khi mua hàng , mọi người nên tìm những nơi bán tổ yến uy tín , và có mức giá hợp lý .Vì sức khỏe của mọi người hãy tham khảo thật kỹ tham khảo thật kỹ trước khi mua hàng."/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thứ 3: Hiện nay trên thị trường có nhiều đơn vị chế biến tổ yến tươi bằng cách ngâm thuốc tẩy trắng, mất vệ sinh và nhiều trường hợp chế biến tổ yến giả, các bạn nên chọn nơi có uy tín , và nên mua tổ yên thô và tự về chế biến."/>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.project.chauhq.yenxao.parallax.ParallaxScrollView>

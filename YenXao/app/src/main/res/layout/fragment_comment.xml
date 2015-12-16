@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_common_conner"
+            android:padding="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_common_conner"
+            android:gravity="top"
+            android:hint="comment"
+            android:maxLength="100"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorAccent"
+            android:text="I wanna Post" />
+
+    </LinearLayout>
+</ScrollView>
