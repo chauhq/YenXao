@@ -25,6 +25,10 @@ import org.androidannotations.annotations.ViewById;
 
 import lombok.Getter;
 
+
+/**
+ * kakak
+ */
 @EActivity(R.layout.activity_main)
 public class MainActivity extends BaseActivity {
     private static final int MAX_TAB_ITEM_LENGHT = 4;
