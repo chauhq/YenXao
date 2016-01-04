@@ -23,7 +23,7 @@ public class ContainerMapFragment extends BaseContainerFragment {
         if (!GooglePlayService.isGooglePlayServicesAvailable(getActivity())) {
             return;
         }
-        replaceFragment(MapFragment_.builder().build(), false);
+       // replaceFragment(MapFragment_.builder().build(), false);
     }
 
 }

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.StrictMode;
 import android.provider.Settings;
 import android.support.v7.app.AlertDialog;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
@@ -32,6 +33,7 @@ import com.project.chauhq.yenxao.ui.Home.HomeFragment;
 import com.project.chauhq.yenxao.ui.util.GPS;
 
 import org.androidannotations.annotations.EFragment;
+import org.androidannotations.annotations.OnActivityResult;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -168,7 +170,7 @@ public class MapFragment extends BaseFragment implements GoogleApiClient.Connect
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             Intent i = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
-                            startActivity(i);
+                            startActivityForResult(i, 200);
                         }
                     })
                     .setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -235,5 +237,9 @@ public class MapFragment extends BaseFragment implements GoogleApiClient.Connect
         public View getInfoContents(Marker marker) {
             return null;
         }
+    }
+    @OnActivityResult(200)
+    void onMapResult() {
+        Log.d("xxxxx", "xxxx");
     }
 }
